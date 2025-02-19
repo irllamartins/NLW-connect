@@ -12,6 +12,7 @@ export function InputRoot({ error = false, ...props }: InputRootProps) {
     />
   )
 }
+
 interface InputIconProps extends ComponentProps<'span'> {}
 export function InputIcon({ ...props }: InputIconProps) {
   return (
@@ -21,6 +22,7 @@ export function InputIcon({ ...props }: InputIconProps) {
     />
   )
 }
+
 interface InputFieldProps extends ComponentProps<'input'> {}
 export function InputField({ ...props }: InputFieldProps) {
   return <input className="flex-1 outline-0 placeholder-gray-400" {...props} />
