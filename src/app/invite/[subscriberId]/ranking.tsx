@@ -20,7 +20,7 @@ export async function Ranking() {
                 {item.name}
               </span>
               <span className="font-heading text-2xl font-semibold text-gray-200 leading-none">
-                1030
+                {item.score}
               </span>
               {index===0&&<Image src={medalGold} alt=""className="absolute top-0 right-8"/>}
               {index===1&&<Image src={medalSilver} alt=""className="absolute top-0 right-8"/>}

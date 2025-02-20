@@ -3,6 +3,7 @@ import logo from '../../../assets/logo.svg'
 import { InviteLinkInput } from './invite-link-input'
 import { Ranking } from './ranking'
 import { Stats } from './stats'
+import { BackHomeButton } from './back-home-button'
 
 interface InvitePageProps {
   params: Promise<{ subscriberId: string }>
@@ -10,9 +11,10 @@ interface InvitePageProps {
 export default async function InvitePage(props: InvitePageProps) {
   const { subscriberId } = await props.params
 
-  const inviteLink = `http://localhost:3000/invite/${subscriberId}`
+  const inviteLink = `http://localhost:3333/invites/${subscriberId}`
 
-  return  <div className="min-h-dvh flex items-center justify-between gap-16 flex-col md:flex-row">
+  return (
+    <div className="min-h-dvh flex items-center justify-between gap-16 flex-col md:flex-row">
       <div className="flex flex-col gap-10 w-full max-w-[550px]">
         <Image src={logo} alt="devstage" className="h-[30px] w-[108.5px]" />
         <div className="space-y-2">
@@ -37,8 +39,9 @@ export default async function InvitePage(props: InvitePageProps) {
         </div>
         <InviteLinkInput inviteLink={inviteLink} />
         <Stats subscriberId={subscriberId} />
+        <BackHomeButton />
       </div>
       <Ranking />
     </div>
-  
+  )
 }

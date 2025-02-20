@@ -2,6 +2,7 @@ import { Radio } from 'lucide-react'
 import Image from 'next/image'
 import logo from '../../assets/logo.svg'
 import { SubscriptionForm } from './subscription-form'
+
 export default function Home() {
   return (
     <div className="min-h-dvh flex flex-col justify-center gap-16">

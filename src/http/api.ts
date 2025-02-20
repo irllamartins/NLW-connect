@@ -114,7 +114,7 @@ export const accessInviteLink = async (subscriberId: string, options?: RequestIn
 export const getGetRankingUrl = () => {
 
 
-  return "https://localhost:3333/ranking"
+  return "http://localhost:3333/ranking"
 }
 
 export const getRanking = async ( options?: RequestInit): Promise<GetRanking200> => {
@@ -142,7 +142,7 @@ export const getRanking = async ( options?: RequestInit): Promise<GetRanking200>
 export const getGetSubscriberInviteCountUrl = (subscriberId: string,) => {
 
 
-  return `https://localhost:3333/subscribers/${subscriberId}/ranking/count`
+  return `http://localhost:3333/subscribers/${subscriberId}/ranking/count`
 }
 
 export const getSubscriberInviteCount = async (subscriberId: string, options?: RequestInit): Promise<GetSubscriberInviteCount200> => {
@@ -170,7 +170,7 @@ export const getSubscriberInviteCount = async (subscriberId: string, options?: R
 export const getGetSubscriberInviteClicksUrl = (subscriberId: string,) => {
 
 
-  return `https://localhost:3333/subscribers/${subscriberId}/ranking/clicks`
+  return `http://localhost:3333/subscribers/${subscriberId}/ranking/clicks`
 }
 
 export const getSubscriberInviteClicks = async (subscriberId: string, options?: RequestInit): Promise<GetSubscriberInviteClicks200> => {
@@ -198,7 +198,7 @@ export const getSubscriberInviteClicks = async (subscriberId: string, options?: 
 export const getGetSubscriberRankingPositionUrl = (subscriberId: string,) => {
 
 
-  return `https://localhost:3333/subscribers/${subscriberId}/ranking/position`
+  return `http://localhost:3333/subscribers/${subscriberId}/ranking/position`
 }
 
 export const getSubscriberRankingPosition = async (subscriberId: string, options?: RequestInit): Promise<GetSubscriberRankingPosition200> => {
